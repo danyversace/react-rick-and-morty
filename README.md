@@ -1,1 +1,0 @@
-# react-rick-and-morty
