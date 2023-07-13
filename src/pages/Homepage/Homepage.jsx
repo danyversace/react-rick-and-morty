@@ -3,6 +3,7 @@ import React, {useEffect, useState} from 'react'
 import './Homepage.css'
 import axios from 'axios'
 import CharacterCard from '../../components/CharacterCard/CharacterCard'
+import Search from '../../components/Search/Search'
 
 function Homepage() {
     // create state for the characters
@@ -31,6 +32,7 @@ function Homepage() {
 
   return (
     <div className='home-container'>
+        <Search setCharacters={setCharacters} />
         <h1>Main Characters</h1>
         <div className='characters-container'>
             {
@@ -39,7 +41,7 @@ function Homepage() {
 
                 // characters.map(item => <p key={item.id}>{item.name}</p>)
             }
-        </div>
+            </div>
         </div>
   )
 }
